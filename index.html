@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>青井ゆみ リンク</title>
+<meta name="description" content="青井ゆみ（青井夕美）の青井ゆみ 応援申し込みフォーム、Instagram、ホームページへのご案内です。">
+<meta property="og:title" content="青井ゆみ">
+<meta property="og:description" content="新時代の八王子">
+<meta property="og:type" content="website">
+<style>html{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500&display=swap">
+<style>
+  /* 一列・中央寄せのリンク集。白地に、リーフレットの青緑と黄色を要所だけに使う */
+  :root {
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --fg: #1F3A38;
+    --muted: #5F7B78;
+    --teal: #2AA29E;
+    --teal-text: #1F8783;
+    --yellow: #F7D23E;
+    --line: #DCEBEA;
+    --on-teal: #FFFFFF;
+    --name: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+    --display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", sans-serif;
+    --body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12201F; --surface: #192B2A; --fg: #E4F1F0; --muted: #9AB7B4;
+      --teal: #2AA29E; --teal-text: #6FD0CA; --yellow: #F7D23E; --line: #2A4442; --on-teal: #FFFFFF;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12201F; --surface: #192B2A; --fg: #E4F1F0; --muted: #9AB7B4;
+    --teal: #2AA29E; --teal-text: #6FD0CA; --yellow: #F7D23E; --line: #2A4442; --on-teal: #FFFFFF;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .page {
+    max-width: 440px;
+    margin: 0 auto;
+    padding-block: 56px 40px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  header {
+    position: relative;
+    text-align: center;
+    padding-block: 28px 4px;
+  }
+  .ripple {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .ripple circle { fill: none; stroke: var(--teal); }
+  .ripple circle:nth-child(1) { opacity: .55; stroke-width: 1.5; }
+  .ripple circle:nth-child(2) { opacity: .32; stroke-width: 1.2; }
+  .ripple circle:nth-child(3) { opacity: .18; stroke-width: 1; }
+  @media (prefers-reduced-motion: no-preference) {
+    .ripple circle {
+      transform-origin: 150px 150px;
+      animation: spread 6s ease-out infinite;
+    }
+    .ripple circle:nth-child(2) { animation-delay: 2s; }
+    .ripple circle:nth-child(3) { animation-delay: 4s; }
+  }
+  @keyframes spread {
+    0%   { transform: scale(.55); opacity: .55; }
+    100% { transform: scale(1.15); opacity: 0; }
+  }
+  .name-block { position: relative; z-index: 1; display: grid; gap: 6px; }
+  .kana {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: .4em;
+    color: var(--muted);
+    padding-left: .4em;
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--name);
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    text-wrap: balance;
+  }
+  .real { font-size: 12px; color: var(--muted); letter-spacing: .08em; }
+  .lead {
+    position: relative;
+    z-index: 1;
+    margin: 18px auto 0;
+    width: fit-content;
+    font-family: var(--name);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: .16em;
+    color: var(--teal-text);
+    padding-bottom: 2px;
+    background: linear-gradient(transparent 62%, color-mix(in srgb, var(--yellow) 55%, transparent) 62%);
+  }
+  .place { position: relative; z-index: 1; margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+
+  nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .link {
+    display: grid;
+    grid-template-columns: 44px 1fr 20px;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    color: var(--fg);
+    text-decoration: none;
+    transition: border-color .2s, transform .2s;
+  }
+  .link:hover { border-color: var(--teal); transform: translateY(-2px); }
+  .link:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+  .icon {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--teal);
+    display: grid; place-items: center;
+  }
+  .icon svg { width: 22px; height: 22px; fill: none; stroke: var(--on-teal); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .is-soon { cursor: default; border-style: dashed; }
+  .is-soon:hover { border-color: var(--line); transform: none; }
+  .is-soon .icon { opacity: .45; }
+  .is-soon .label { color: var(--muted); }
+  .soon { grid-column: 3; justify-self: end; white-space: nowrap; font-size: 11px; font-weight: 500; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0 8px; }
+  .link:has(.soon) { grid-template-columns: 44px 1fr auto; }
+  .text { min-width: 0; display: grid; }
+  .label { font-family: var(--display); font-weight: 700; font-size: 16px; line-height: 1.5; }
+  .sub { font-size: 12.5px; color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
+  .arrow { width: 20px; height: 20px; fill: none; stroke: var(--teal-text); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+</style>
+
+</head>
+<body>
+<div class="page">
+  <header>
+    <svg class="ripple" viewBox="0 0 300 300" aria-hidden="true">
+      <circle cx="150" cy="150" r="90"></circle>
+      <circle cx="150" cy="150" r="120"></circle>
+      <circle cx="150" cy="150" r="145"></circle>
+    </svg>
+    <div class="name-block">
+      <span class="kana">あおい ゆみ</span>
+      <h1>青井ゆみ</h1>
+      <span class="real">本名・青井夕美</span>
+    </div>
+    <p class="lead">新時代の八王子</p>
+    <p class="place">東京都八王子市</p>
+  </header>
+
+  <nav aria-label="リンク">
+    <ul>
+      <li>
+        <a class="link" id="link-form" href="https://forms.gle/HhypuKtMK7sMWsX8A" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>
+          </span>
+          <span class="text">
+            <span class="label">青井ゆみ 応援申し込みフォーム</span>
+            <span class="sub">応援してくださる方は、こちらからお申し込みください</span>
+          </span>
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="link" id="link-insta" href="https://www.instagram.com/_aoi_yumi/" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.8 7.2h.01"/></svg>
+          </span>
+          <span class="text">
+            <span class="label">Instagram</span>
+            <span class="sub">地域の活動や日々のこと</span>
+          </span>
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+      </li>
+      <li>
+        <div class="link is-soon" id="link-web" aria-disabled="true">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg>
+          </span>
+          <span class="text">
+            <span class="label">ホームページ</span>
+            <span class="sub">もうすぐ公開します</span>
+          </span>
+          <span class="soon">準備中</span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+</body>
+</html>
